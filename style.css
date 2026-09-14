@@ -1,0 +1,13 @@
+:root{
+    --Tam-fuente: 16px ;
+    --fuente-principal: Arial, Helvetica, sans-serif;
+    --color-fondo: #F4F5F7
+
+;
+
+}
+body {
+    font-family: var(--fuente-principal);
+    font-size: var(--Tam-fuente);
+    background-color: var(--color-fondo);
+}
