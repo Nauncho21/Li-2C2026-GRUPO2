@@ -1,13 +1,71 @@
 :root{
     --Tam-fuente: 16px ;
-    --fuente-principal: Arial, Helvetica, sans-serif;
+    --fuente-principal: Google Sans;
     --color-fondo: #F4F5F7
 
 ;
+
+* { box-sizing: border-box; margin: 0; }
+ul { list-style: none; padding: 0; }
 
 }
 body {
     font-family: var(--fuente-principal);
     font-size: var(--Tam-fuente);
     background-color: var(--color-fondo);
+}
+
+#hero {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.363)), url(../imagenes/MonumentoMilanesa.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    height: 500px;
+    position: relative;
+}
+
+
+#Centro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    color: white;
+    width: 80%;
+    
+}
+h1 {
+    font-size: 5rem;
+}
+
+.titulo {
+    font-size: 2rem;
+}
+
+#barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+}
+
+nav {
+    background: rgb(0, 200, 255);
+    border-radius: 999px;
+    padding: 12px 24px;
+
+}
+
+nav ul {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
 }
