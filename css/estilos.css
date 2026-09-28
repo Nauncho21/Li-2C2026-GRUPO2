@@ -40,8 +40,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    text-align: center;
+    
     color: white;
     width: 80%;
     
@@ -50,18 +49,17 @@ h1 {
     font-size: var(--FontSH1);
 }
 
+#Lugares {
+    
+}
 
-section h2{
-
-    font-size: var(--FontSH2);
-    text-align: center;
-    padding: 2rem 2rem;
-    border-color: #411D06;
-    color: #411D06 ;
-    background-color: #FF9737; 
-
-     
-    ;
+.encabezado{
+    width: fit-content;
+    margin: 1rem auto;
+    padding: 0.85rem 2.5rem;
+    background-color: #FF9737;
+    border-radius: 20px;
+text-align: center;    font-size: 2rem;
 }
 
 h3 {
