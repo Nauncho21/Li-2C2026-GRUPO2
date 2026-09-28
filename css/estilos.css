@@ -59,7 +59,8 @@ h1 {
     padding: 0.85rem 2.5rem;
     background-color: #FF9737;
     border-radius: 20px;
-text-align: center;    font-size: 2rem;
+    text-align: center;
+    font-size: var(--FontSH2);
 }
 
 h3 {
@@ -68,7 +69,7 @@ h3 {
 }
 
 .titulo {
-    font-size: 2rem;
+    font-size: var(--FontSH2)
 }
 
 #barra {
@@ -82,6 +83,10 @@ nav {
     background: rgb(229, 101, 21);
     border-radius: 5rem;
     padding: 12px 24px;
+    position: fixed;
+    z-index: 5;
+    right: 1rem;
+    top: 2rem;
 
 }
 
@@ -102,7 +107,7 @@ nav a {
 footer {
     font-size: 2rem;
     background-image:linear-gradient( rgba(0, 0, 0, 0.594)),url(../imagenes/nochemilanga.png);
-    
+    color: white;
     }
 
 .h3contacto{
