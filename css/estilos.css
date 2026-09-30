@@ -24,6 +24,10 @@ body {
     background-color: var(--color-fondo);
 }
 
+/*
+    Header
+*/
+
 #hero {
     background-image:linear-gradient( rgba(0, 0, 0, 0.363)), url(../imagenes/MonumentoMilanesa.jpg);
     background-size: cover;
@@ -40,17 +44,13 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+    text-align: center;
     color: white;
     width: 80%;
     
 }
 h1 {
     font-size: var(--FontSH1);
-}
-
-#Lugares {
-    
 }
 
 .encabezado{
@@ -101,8 +101,11 @@ nav a {
     color: white;
 }
 
+/*
 
+Footer
 
+*/
 
 footer {
     font-size: 2rem;
@@ -141,4 +144,59 @@ address a{
 figure img {
     width: 500px;
     ;
+}
+
+/*
+    Lugares.HTML
+*/
+
+#layout {  
+    
+    display: grid;  
+    grid-template-columns: 1fr 1fr  ;
+    grid-template-rows: auto;
+    min-height: 750px; /* largo */
+    max-width: 1500px; /* angosto */
+    padding: 20px;
+    margin: 0rem auto;
+    gap: 1rem;
+}
+
+#layout article {
+  display: contents;
+}
+
+#layout img {
+  grid-column: 1 / 2; /*grid-column: 1 → va en la primera columna*/
+  grid-row: 2 / 3; /*grid-row: 2    → va en la segunda fila*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  text-align: center;
+  border-radius: 20px;
+  
+}
+#layout h2 {
+    display: grid;
+    place-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    grid-column: 1 / 3;  /* desde/hasta */
+    padding: 5px;
+    text-align: center;
+    font-size: 50px;
+    color: orange;
+}
+
+.info {
+    background-color: #ffffff;
+    border-radius: 20px;
+  grid-column: 2;/*grid-column: 2 → va en la segunda columna*/
+  grid-row: 2;/*grid-row: 2    → va en la segunda fila*/
+
+  padding: 30px;
+  
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
 }
