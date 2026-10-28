@@ -1,13 +1,24 @@
 :root{
     --Tam-fuente: 16px;
     --fuente-principal: "Google Sans";
+
+    /* Colores */
     --color-fondo: #FFE8D3;
     --color-tarjetas: #ff84004e;
     --color-tipo: #411D06;
     --color-destacado:rgb(229, 101, 21);
+    --color-blanco: #ffffff;
+    /* Tamaño de texto */
     --FontSH1: 4rem;
     --FontSH2: 2rem;
     --FontSH3: 1.5rem;
+    /*Espaciado para margin, padding y gap*/
+    --espacio-1: 0.5rem;
+    --espacio-2: 1rem;
+    --espacio-3: 2rem;
+    --espacio-4: 3rem;
+    --ancho-contenido: 82%;
+
 }
 
 html{
@@ -62,7 +73,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
+    color: var(--color-blanco);
     width: 80%;
     
 }
@@ -72,8 +83,8 @@ h1 {
 
 .encabezado{
     width: fit-content;
-    margin: 1rem auto;
-    padding: 0.85rem 2.5rem;
+    margin: var(--espacio-2) auto;
+    padding: var(--espacio-2) var(--espacio-3);
     background-color: var(--color-destacado);
     border-radius: 20px;
     text-align: center;
@@ -93,13 +104,13 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 26px;
+    padding: var(--espacio-2) var(--espacio-3);
 }
 
 nav {
     background: var(--color-destacado);
     border-radius: 5rem;
-    padding: 12px 24px;
+    padding: var(--espacio-2) var(--espacio-3);
     position: fixed;
     z-index: 5;
     right: 1rem;
@@ -109,13 +120,13 @@ nav {
 
 nav ul {
     display: flex;
-    gap: 2rem;
+    gap: var(--espacio-3);
     list-style: none;
 }
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: var(--color-blanco);
 }
 nav a:hover {
     color: var(--color-fondo);
@@ -131,11 +142,11 @@ Footer
 footer {
     font-size: 2rem;
     background-image:linear-gradient( rgba(0, 0, 0, 0.594)),url(../imagenes/nochemilanga.png);
-    color: white;
+    color: var(--color-blanco);
     }
 
 .h3contacto{
-    color: white;
+    color: var(--color-blanco);
     font-size: 2rem;
 }
 
@@ -146,7 +157,7 @@ footer {
 }
 
 address{
-    padding: 1.5rem;
+    padding: var(--espacio-3);
     font-size: 1.2rem;
 
 }
@@ -169,8 +180,8 @@ address a{
 
 figure img {
     width: 400px;
-    padding: 1.3rem;
-    margin-bottom: 2rem;
+    padding: var(--espacio-2);
+    margin-bottom: var(--espacio-3);
     border-radius: 2rem;
 }
 figure{
@@ -180,7 +191,7 @@ figure{
     align-items: center;
 }
 figure p {
-    padding:0rem 2rem 2rem;
+    padding: 0 var(--espacio-3) var(--espacio-3);
 }
 
 
@@ -189,8 +200,8 @@ figure p {
 
     #laislademilanga{
     
-    margin: 0 auto;
-    width: 82%;
+    margin: var(--espacio-3) auto;
+    width: var(--ancho-contenido);
     
 
     }
@@ -212,13 +223,13 @@ figure p {
         display: flex;
         align-items: center;
         text-align: center;
-        padding: 0px 1rem 1rem 0px;
+        padding: 0 var(--espacio-2) var(--espacio-2) 0;
         border: solid;
         border-width: 0px 2px 2px 0px ;
     }
     #p-0 {
         grid-column: 3 / 5 ;
-        padding: 1rem;
+        padding: var(--espacio-2);
         border: solid;
         border-width: 0px 0px 2px 0px ;
         
@@ -230,13 +241,13 @@ figure p {
         display: flex;
         align-items: center;
         text-align: center;
-        padding: 0px 1rem 0px;
+        padding: 0 var(--espacio-2) 0;
         border: solid;
         border-width: 0px 2px 2px 0px ;
     } 
     #p-1 {
         grid-column: 3 / 5;
-        padding: 1rem;
+        padding: var(--espacio-2);
         border: solid;
         border-width: 0px 0px 2px 0px ;
     }
@@ -246,13 +257,13 @@ figure p {
         display: flex;
         align-items: center;
         text-align: center;
-        padding: 0px 1rem 0px;
+        padding: 0 var(--espacio-2) 0;
         border: solid;
         border-width: 0px 2px 0px 0px ;
     }
     #p-2 {  
         grid-column: 3 / 5;
-        padding: 1rem}
+        padding: var(--espacio-2)}
 
     .articuloisla img {
         grid-column: 1 / 5;
@@ -260,7 +271,7 @@ figure p {
         justify-self: center;
         width: 800px;
         max-width: 100%;
-        margin-bottom: 2rem;
+        margin-bottom: var(--espacio-3);
         border-radius: 2rem;
     }
     
@@ -274,8 +285,8 @@ figure p {
 }
 
 .HistoricosMilanga{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: var(--espacio-2);
+    margin-bottom: var(--espacio-2);
     box-sizing: border-box;
     
     
@@ -285,7 +296,7 @@ figure p {
 }
 
 .layout2{
-    width: 70%;
+    width: var(--ancho-contenido);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -293,9 +304,9 @@ figure p {
     min-height: 100%;
     max-width: 100%; 
 
-    padding: 2rem;
-    margin: 2rem auto;
-    gap: 2rem;
+    padding: var(--espacio-3);
+    margin: var(--espacio-3) auto;
+    gap: var(--espacio-3);
     
     background-color: var(--color-tarjetas);
     border-radius: 15px;
@@ -316,21 +327,21 @@ dt {
     border-right: 0;
     border-color: var(--color-tipo);
     border-width: 2px;
-    padding-bottom: 1.2rem;
+    padding-bottom: var(--espacio-2);
 
 }
 
 .antesdevisitar ol {
-    width: 70%;
+    width: var(--ancho-contenido);
     display: flex;
     align-items: center;
     justify-content: center;
     display: grid;
     min-height: 100%;
     max-width: 100%; 
-    padding: 2rem;
-    margin: 2rem auto;
-    gap: 2rem;
+    padding: var(--espacio-3);
+    margin: var(--espacio-3) auto;
+    gap: var(--espacio-3);
     
     background-color: var(--color-tarjetas);
     border-radius: 15px;
@@ -344,13 +355,13 @@ ol a {
 }
 
 #LugaresHistoricos{
-    width: 82%;
+    width: var(--ancho-contenido);
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100%;
     max-width: 100%; 
-    margin: 2rem auto;
+    margin: var(--espacio-3) auto;
     
     
 }
@@ -368,9 +379,9 @@ ol a {
     grid-template-rows: auto;
     min-height: 750px; /* largo */
     max-width: 1500px; /* angosto */
-    padding: 20px;
+    padding: var(--espacio-2);
     margin: 0rem auto;
-    gap: 1rem;
+    gap: var(--espacio-2);
 }
 
 #layout article {
@@ -390,22 +401,22 @@ ol a {
 #layout h2 {
     display: grid;
     place-items: center;
-    background-color: #ffffff;
+    background-color: var(--color-blanco);
     border-radius: 20px;
     grid-column: 1 / 3;  /* desde/hasta */
-    padding: 5px;
+    padding: var(--espacio-1);
     text-align: center;
     font-size: 50px;
     color: var(--color-tarjetas);
 }
 
 .info {
-    background-color: #ffffff;
+    background-color: var(--color-blanco);
     border-radius: 20px;
   grid-column: 2;/*grid-column: 2 → va en la segunda columna*/
   grid-row: 2;/*grid-row: 2    → va en la segunda fila*/
 
-  padding: 30px;
+  padding: var(--espacio-3);
   
   display: flex;
   flex-direction: column;
@@ -422,14 +433,14 @@ ol a {
     display: grid;  
     grid-template-columns: 1fr 1fr  ;
     grid-template-rows: auto;
-    width: 82%;
+    width: var(--ancho-contenido);
   
     min-height: 100%; /* largo */
     max-width: 100%; /* angosto */
 
-    padding: 2rem;
-    margin: 2rem auto;
-    gap: 2rem;
+    padding: var(--espacio-3);
+    margin: var(--espacio-3) auto;
+    gap: var(--espacio-3);
     
     background-color: var(--color-tarjetas);
     border-radius: 15px;
@@ -440,7 +451,7 @@ ol a {
         
     grid-column: 1 / -1;  
     text-align: center;
-    padding: 10px;
+    padding: var(--espacio-1);
   }
 
   .imagen {
@@ -452,7 +463,7 @@ ol a {
 
     width: 100%;
     margin: 0;
-    padding: 20px;
+    padding: var(--espacio-2);
     box-sizing: border-box;
   }
 
@@ -471,7 +482,7 @@ ol a {
     grid-column: 2; 
     grid-row: 2; 
     
-    padding: 30px;  
+    padding: var(--espacio-3);  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -480,7 +491,7 @@ ol a {
   .contactos{
     grid-column: 1 / -1; 
     
-    padding: 25px;
+    padding: var(--espacio-3);
     text-align:left;
   }
 
@@ -490,17 +501,17 @@ ol a {
 */
 form {
     max-width: 600px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #ffffff;
+    margin: var(--espacio-3) auto;
+    padding: var(--espacio-3);
+    background-color: var(--color-blanco);
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 label {
     display: block;
-    margin-top: 1rem;
-    margin-bottom: 0.3rem;
+    margin-top: var(--espacio-2);
+    margin-bottom: var(--espacio-1);
     font-weight: bold;
 }
 
@@ -510,7 +521,7 @@ input[type="tel"],
 select,
 textarea {
     width: 100%;
-    padding: 0.8rem;
+    padding: var(--espacio-2);
     border: 1px solid #ccc;
     border-radius: 8px;
     font-family: inherit;
@@ -521,15 +532,15 @@ button[type="submit"] {
     display: block;
     width: 100%;
     background-color: var(--color-destacado);
-    color: white;
+    color: var(--color-blanco);
     border: none;
-    padding: 1rem;
+    padding: var(--espacio-2);
     font-size: 1.1rem;
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 1.5rem;
+    margin-top: var(--espacio-3);
 }
 
 button[type="submit"]:hover {
@@ -539,4 +550,3 @@ button[type="submit"]:hover {
 /*
 Sección Lugares del Index
 */
-
