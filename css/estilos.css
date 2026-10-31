@@ -123,7 +123,7 @@ h3 {
     display: flex;
     padding: 1rem 0.5rem 0 ;}
 
-.cointaint
+
 /*
 
 Footer
@@ -160,13 +160,14 @@ address a{
 
 
 #articulosdiv{
-    display: grid;
+    display: flex;
+    flex-wrap:wrap;
+    gap: var(--espacio-3);
     background-color: var(--color-tarjetas);
     border-radius: 2rem;
-    grid-template-columns: repeat(2, 1fr);
     align-items: stretch;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    ;
+    padding: var(--espacio-2);
 }
 
 figure img {
@@ -279,11 +280,8 @@ figure p {
     Formato de seccion de lugares historicos
 */
     .HistoricosMilanga{
-        margin-top: var(--espacio-2);
-        margin-bottom: var(--espacio-2);
         box-sizing: border-box;
-        
-        
+        flex: 1 1 400px;
     }
     .HistoricosMilanga h3{
         text-align: center;
@@ -554,5 +552,27 @@ button[type="submit"]:hover {
 }
 
 /*
-Sección Lugares del Index
+Flexbox
 */
+
+.navbar-nav{
+    display:flex ; 
+    gap: var(--espacio-3);
+}
+
+/* posicionamiento */
+.contenedor-imagen {
+    position: relative;
+}
+
+.etiqueta {
+    position: absolute;
+    top: var(--espacio-3);
+    left: var(--espacio-3);
+    padding: var(--espacio-1) var(--espacio-2);
+    background-color: var(--color-destacado);
+    color: var(--color-blanco);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
