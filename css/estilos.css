@@ -100,39 +100,30 @@ h3 {
     font-size: var(--FontSH2)
 }
 
+
 #barra {
+    
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    border: solid;
     align-items: center;
-    padding: var(--espacio-2) var(--espacio-3);
+    background-color: var(--color-destacado);
 }
 
-nav {
-    background: var(--color-destacado);
-    border-radius: 5rem;
-    padding: var(--espacio-2) var(--espacio-3);
-    position: fixed;
-    z-index: 5;
-    right: 1rem;
-    top: 2rem;
+.navbar{
+    padding: 1px;
+    background-color: var(--color-destacado);}
 
-}
-
-nav ul {
-    display: flex;
-    gap: var(--espacio-3);
-    list-style: none;
-}
-
-nav a {
-    text-decoration: none;
+.navbar-brand:hover {
     color: var(--color-blanco);
-}
-nav a:hover {
-    color: var(--color-fondo);
     text-decoration: underline; 
 }
+.nav-link{
+    display: flex;
+    padding: 1rem 0.5rem 0 ;}
 
+.cointaint
 /*
 
 Footer

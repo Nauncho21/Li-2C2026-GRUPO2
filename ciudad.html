@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
@@ -10,20 +9,55 @@
 rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sobre Milán-ga</title>
 </head>
 
 <body>
+                                <!-- Bootstrap Navbar -->
+                                  <!-- Navbar top -->
+                <nav class="navbar navbar-light">
+                        <div class="container-fluid" >
+                                <div class= "navbartop">
+                                        <a class="navbar-brand" href="#"><img src="imagenes/logo.png" alt="Logo isla milan-ga" width="30" height="30" class="d-inline-block align-text-top"></a>
+                                         Isla Milán-ga
+                                        
+                                </div>
+                        </div>
+
+                </nav>
+                                  <!-- Navbar bottom-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Explorar</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Página de inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="lugares.html">Lugares</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ciudad.html">Sobre la ciudad</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+                                <!-- Fin Bootstrap Navbar -->
+
+
+
+
         <div id="hero">
-                <header id="barra">
-                        <img src="imagenes/logo.png" width="100" alt="Logo de la pagina" id="Logo">
-                        <nav>
-                                <ul>
-                                        <li><a href="index.html">Pagina de Inicio</a></li>
-                                        <li><a href="lugares.html">Lugares para ir </a></li>
-                                        <li><a href="contacto.html">Contactanos</a></li>
-                                        <li><a href="ciudad.html">Sobre Milanga</a></li>
-                                </ul>
-                        </nav>
+                <header>
                         <div id="Centro">
                                 <h1>Historia y cultura de la isla de las milanesas</h1>
                         </div>
@@ -72,9 +106,9 @@ rel="stylesheet">
 
     </section>
     
-    <h2 class="encabezado">Lugares historicos:</h2>
+    
     <section class="LugaresHistoricos">
-            
+            <h2 class="encabezado">Lugares historicos:</h2>
             <div id="articulosdiv">
             <article class="HistoricosMilanga">
                     
@@ -84,7 +118,7 @@ rel="stylesheet">
                     <figure>
                             <img src="imagenes/ImagenBarco.jpg" alt="Imagen de rebeldes recibiendo pan rallado" width="600">
                             <figcaption>
-                                    <h3>El suministro rebelde</h3>
+                                    <h4>El suministro rebelde</h4>
                                     <p>Durante La Guerra de la Milan-ga, el Puerto Panra-llado fue vital: por allí ingresó clandestinamente el pan rallado que abasteció a los rebeldes, garantizando el rebozado necesario para ganar la independencia.</p>
                             </figcaption>
                     </figure>
@@ -98,7 +132,7 @@ rel="stylesheet">
                     <figure>
                         <img src="imagenes/Imagenvolcan.jpg" alt="Ejercito rebelde cruzando volcan" width="600">
                         <figcaption>
-                                <h3>El paso del volcan</h3>
+                                <h4>El paso del volcan</h4>
                                 <p>Durante la histórica contienda por la Isla de Milan-ga, el ejército rebelde ejecutó una maniobra audaz. Cruzando el terreno escarpado del volcán inactivo, flanquearon por sorpresa a las fuerzas rivales que defendían la costa. Este movimiento estratégico resultó decisivo para asegurar el control de la isla y su libertad.</p>
 
                         </figcaption>
@@ -120,7 +154,22 @@ rel="stylesheet">
                         <li>¡Estar dispuestos a probar las mejores milanesas del mundo!</li>
                 </ol>
     </section>
-        
+    
+
+<form>
+  <h3>Coloque su email para recibir novedades</h3>
+  
+  <div class="form-group">
+    <label for="exampleInputEmail1">Correo electrónico</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresar correo electrónico">
+    <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su Email con nadie.</small>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Recibir novedades</button>
+</form>
+
+   
+    
 </main>
         <footer>
               <div class="contactoflex"> 
