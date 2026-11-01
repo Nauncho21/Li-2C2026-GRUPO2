@@ -34,7 +34,7 @@ html{
 
 
 a:hover {
-    color: var(--color-fondo);
+    color: var(--color-tipo);
     text-decoration: underline; 
 }
 
@@ -361,7 +361,6 @@ figure p {
 
     .LugaresHistoricos{
         width: var(--ancho-contenido);
-        display: flex;
         align-items: center;
         justify-content: center;
         min-height: 100%;
