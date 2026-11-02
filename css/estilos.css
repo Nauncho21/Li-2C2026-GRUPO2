@@ -189,7 +189,6 @@ figure p {
 
 /*grid de "La isla de milanga" en "ciudad.html"* */
 
-
     #laislademilanga{
     
     margin: var(--espacio-3) auto;
@@ -267,26 +266,9 @@ figure p {
         border-radius: 2rem;
     }
     
-
-
-
-
-
 .articuloisla h3 {
     font-size: var(--FontSH3);
 }
-
-/*
-    Formato de seccion de lugares historicos
-*/
-    .HistoricosMilanga{
-        box-sizing: border-box;
-        flex: 1 1 400px;
-    }
-    .HistoricosMilanga h3{
-        text-align: center;
-    }
-
 
 /* 
     Estilizado de seccion de caracteristicas de la isla en ciudad.html
@@ -307,9 +289,7 @@ figure p {
         background-color: var(--color-tarjetas);
         border-radius: 15px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
     }
-
 
     dt {
         font-size: var(--FontSH3);
@@ -358,7 +338,6 @@ figure p {
 /* 
     Seccion con figcaption 
 */
-
     .LugaresHistoricos{
         width: var(--ancho-contenido);
         align-items: center;
@@ -366,11 +345,7 @@ figure p {
         min-height: 100%;
         max-width: 100%; 
         margin: var(--espacio-3) auto;
-        
-    
 }
-
-
 
 /* 
     Layouts usados en la página web
@@ -426,78 +401,181 @@ figure p {
     justify-content: center;
 }
 
+/*
+  Grilla de index
+*/
+#articulosdiv, #articulos-ciudad.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+
+    background-color: var(--color-tarjetas);
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#articulosdiv .HistoricosMilanga, #articulos-ciudad .HistoricosMilanga {
+    box-sizing: border-box;
+    min-width: 0;
+    padding: 1rem;
+}
+
+#articulosdiv .HistoricosMilanga h3, #articulos-ciudad .HistoricosMilanga h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#articulosdiv .HistoricosMilanga  figure , #articulos-ciudad #articulos-ciudad figure {
+    display: block;
+    margin: 0;
+}
+
+#articulosdiv .contenedor-imagen {
+    position: relative;
+    width: 100%;
+}
+
+#articulosdiv .contenedor-imagen img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border-radius: 1rem;
+}
+
+#articulosdiv .HistoricosMilanga figcaption, #articulos-ciudad figcaption {
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+#articulosdiv .HistoricosMilanga figcaption p {
+    padding: 0;
+    margin: 0;
+}
+
+#articulosdiv .etiqueta {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+/*
+  Grilla de ciudad
+*/
+
+#articulos-ciudad .contenedor-imagen img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+
 
 
 /*
-    Lugares de interes para Index
+  Lugares de interes para Index
 */
   
 .layout {
-    display: grid;  
-    grid-template-columns: 1fr 1fr  ;
-    grid-template-rows: auto;
-    width: var(--ancho-contenido);
-  
-    min-height: 100%; /* largo */
-    max-width: 100%; /* angosto */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-    padding: var(--espacio-3);
-    margin: var(--espacio-3) auto;
-    gap: var(--espacio-3);
-    
-    background-color: var(--color-tarjetas);
+    width: 82%;
+    margin: 2rem auto;
+    padding: 2rem;
+    gap: 1rem;
+
+    box-sizing: border-box;
+
+    background-color: #ff84004e;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-  
-  .TituloLugar {
-        
-    grid-column: 1 / -1;  
+
+.TituloLugar {
+    grid-column: 1 / -1;
     text-align: center;
-    padding: var(--espacio-1);
-  }
+    padding: 10px;
+}
 
-  .imagen {
-    grid-column: 1; 
-    grid-row: 2; 
-    
+.imagen {
+    grid-column: 1 / -1;
+
     display: grid;
-    place-items: center;
+    grid-template-columns: 1fr 1fr;
 
-    width: 100%;
+    align-items: start;
+    gap: 2rem;
+
     margin: 0;
-    padding: var(--espacio-2);
-    box-sizing: border-box;
-  }
+    padding: 20px;
+}
 
-  .imagen img{
+.imagen img {
     display: block;
 
     width: 100%;
-    max-width: 800px;
-    height: 100%;
-    
+    max-width: 600px;
+    height: 600px;
+
     object-fit: cover;
-    border-radius: 20px;
-  }
-  
-  .descripcion {
-    grid-column: 2; 
-    grid-row: 2; 
-    
-    padding: var(--espacio-3);  
+    border-radius: 10px;
+
+    margin: 0 auto;
+    align-self: start;
+}
+
+.descripcion {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-  }
+    justify-content: flex-start;
+    align-items: stretch;
 
-  .contactos{
-    grid-column: 1 / -1; 
-    
-    padding: var(--espacio-3);
-    text-align:left;
-  }
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
 
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.descripcion > p {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.detalles {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 15px 0;
+    margin: 0;
+
+    border-radius: 5px;
+}
+
+.detalles h4 {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.detalles ul {
+    margin: 0;
+    padding-left: 0px;
+}
+
+.contactos {
+    grid-column: 1 / -1;
+
+    padding: 25px;
+    text-align: left;
+}
 
 /*
     Sección Formulario de Contacto
