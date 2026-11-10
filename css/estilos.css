@@ -33,10 +33,6 @@ html{
 }
 
 
-a:hover {
-    color: var(--color-tipo);
-    text-decoration: underline; 
-}
 
 
 ul { 
@@ -100,30 +96,24 @@ h3 {
     font-size: var(--FontSH2)
 }
 
-
-#barra {
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: solid;
-    align-items: center;
-    background-color: var(--color-destacado);
+.nav-link{
+    color: var(--color-blanco);
+    padding: 1px
 }
 
-.navbar{
-    padding: 1px;
-    background-color: var(--color-destacado);}
-
-.navbar-brand:hover {
-    color: var(--color-blanco);
+.nav-link:hover {
+    color: var(--color-destacado);
     text-decoration: underline; 
 }
-.nav-link{
-    display: flex;
-    padding: 1rem 0.5rem 0 ;}
 
+.navbar-toggler{
+background-color: var(--color-tipo);
+color: var(--color-blanco);}
 
+.navbar-fondo{
+    
+    background-color: var(--color-tipo);
+}
 /*
 
 Footer
@@ -217,12 +207,16 @@ figure p {
         padding: 0 var(--espacio-2) var(--espacio-2) 0;
         border: solid;
         border-width: 0px 2px 2px 0px ;
+        margin: 0;
+    ;
     }
     #p-0 {
         grid-column: 3 / 5 ;
-        padding: var(--espacio-2);
+        padding: var(--espacio-3);
         border: solid;
-        border-width: 0px 0px 2px 0px ;
+        border-width: 0px 0px 2px 0;
+        margin: 0;
+        
         
     }
 
@@ -235,12 +229,14 @@ figure p {
         padding: 0 var(--espacio-2) 0;
         border: solid;
         border-width: 0px 2px 2px 0px ;
+        margin: 0;
     } 
     #p-1 {
         grid-column: 3 / 5;
-        padding: var(--espacio-2);
+        padding: var(--espacio-3);
         border: solid;
         border-width: 0px 0px 2px 0px ;
+        margin: 0;
     }
     #h3-2 {
         grid-row-start: 3;
@@ -251,10 +247,13 @@ figure p {
         padding: 0 var(--espacio-2) 0;
         border: solid;
         border-width: 0px 2px 0px 0px ;
+        margin: 0;
     }
     #p-2 {  
         grid-column: 3 / 5;
-        padding: var(--espacio-2)}
+        padding: var(--espacio-3);
+        margin: 0
+    }
 
     .articuloisla img {
         grid-column: 1 / 5;
@@ -265,6 +264,7 @@ figure p {
         margin-bottom: var(--espacio-3);
         border-radius: 2rem;
     }
+    
     
 .articuloisla h3 {
     font-size: var(--FontSH3);
@@ -505,7 +505,6 @@ figure p {
 
 .imagen {
     grid-column: 1 / -1;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
 
