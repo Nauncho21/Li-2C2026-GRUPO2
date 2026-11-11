@@ -32,7 +32,10 @@ html{
     
 }
 
-
+body.oscuro {
+ background-color: #1a1a1a;
+ color: #f5f5f5;
+}
 
 
 ul { 
@@ -141,7 +144,6 @@ address{
     padding: var(--espacio-3);
     font-size: 1.2rem;
     margin-bottom: 0;
-
 }
 
 address a{
