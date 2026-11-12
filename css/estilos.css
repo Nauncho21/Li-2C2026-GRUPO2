@@ -663,6 +663,14 @@ Flexbox
 /* posicionamiento */
 .contenedor-imagen {
     position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.contenedor-imagen img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .etiqueta {
