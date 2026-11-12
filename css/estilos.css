@@ -45,6 +45,16 @@ body.oscuro label{
     color: #1a1a1a;
 }
 
+body.oscuro #btn-modo {
+    color: var(--color-blanco);
+}
+
+#btn-modo {
+    background-color: var(--color-destacado);
+    color: var(--color-tipo);
+}
+
+
 ul { 
     list-style: none;
     padding: 0;
