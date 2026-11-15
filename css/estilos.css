@@ -138,6 +138,12 @@ color: var(--color-blanco);}
     
     background-color: var(--color-tipo);
 }
+
+.active{ 
+    color: var(--color-tipo);
+    font-weight: bold;
+    border: solid;
+}
 /*
 
 Footer
@@ -218,7 +224,6 @@ figure p {
 
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
         grid-template-rows: auto;
         
     }
@@ -429,10 +434,7 @@ figure p {
   Grilla de index
 */
 #articulosdiv, #articulos-ciudad.row {
-    display: flex;
-    flex-wrap: wrap;
     gap: 0;
-
     background-color: var(--color-tarjetas);
     border-radius: 2rem;
     padding: 2rem;
@@ -440,18 +442,18 @@ figure p {
     margin-bottom: 2rem;
 }
 
-#articulosdiv .HistoricosMilanga, #articulos-ciudad .HistoricosMilanga {
+#articulosdiv .HistoricosMilanga, #articulos-ciudad {
     box-sizing: border-box;
     min-width: 0;
     padding: 1rem;
 }
 
-#articulosdiv .HistoricosMilanga h3, #articulos-ciudad .HistoricosMilanga h3 {
+#articulosdiv .HistoricosMilanga h3, #articulos-ciudad {
     text-align: center;
     margin-bottom: 1rem;
 }
 
-#articulosdiv .HistoricosMilanga  figure , #articulos-ciudad #articulos-ciudad figure {
+#articulosdiv .HistoricosMilanga  figure , #articulos-ciudad figure {
     display: block;
     margin: 0;
 }
