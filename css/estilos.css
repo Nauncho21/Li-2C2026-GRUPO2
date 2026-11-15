@@ -139,6 +139,11 @@ color: var(--color-blanco);}
     background-color: var(--color-tipo);
 }
 
+.navbar-nav{
+    display:flex ; 
+    gap: var(--espacio-3);
+}
+
 .active{ 
     color: var(--color-tipo);
     font-weight: bold;
@@ -224,7 +229,7 @@ figure p {
 
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
+        
         
     }
 
@@ -304,7 +309,6 @@ figure p {
 */
     .layout2{
         width: var(--ancho-contenido);
-        display: flex;
         align-items: center;
         justify-content: center;
         display: grid;
@@ -343,7 +347,6 @@ figure p {
 
     .antesdevisitar ol {
         width: var(--ancho-contenido);
-        display: flex;
         align-items: center;
         justify-content: center;
         display: grid;
@@ -654,7 +657,7 @@ button[type="submit"] {
     color: var(--color-blanco);
     border: none;
     padding: var(--espacio-2);
-    font-size: 1.1rem;
+    font-size: var(--FontSH3);
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
@@ -670,10 +673,7 @@ button[type="submit"]:hover {
 Flexbox
 */
 
-.navbar-nav{
-    display:flex ; 
-    gap: var(--espacio-3);
-}
+
 
 /* posicionamiento */
 .contenedor-imagen {

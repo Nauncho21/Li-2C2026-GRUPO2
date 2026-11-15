@@ -30,20 +30,20 @@ boton.addEventListener("click", () => { // Cuando hagan click en el valor que ti
 
 
 // Confirmacion de llenado de formulario en contacto.html
-const formulario = document.getElementById("formulariocontacto");
-formulario.addEventListener("submit", ()=>{
-const nombre = document.getElementById("nombre").value.trim();
-const email = document.getElementById("email").value.trim();
 
-    if ((nombre === ""|| email === ""))
-    {
-        alert("Por favor, complete todos los campos obligatorios incluidos en el formulario");  
-    }
-    else
-    {
-        alert("Formulario exitosamente enviado"
-        )
-    }
+    const formulario = document.getElementById("formulariocontacto");
+    formulario.addEventListener("submit", ()=>{
+    const nombre = document.getElementById("nombre").value.trim();
+    const email = document.getElementById("email").value.trim();
 
+        if ((nombre === ""|| email === ""))
+        {
+            alert("Por favor, complete todos los campos obligatorios incluidos en el formulario");  
+        }
+        else
+        {
+            alert("Formulario exitosamente enviado")
+        }
+    })
 
-})
+// Confirmacion de llenado de formulario en contacto.html
