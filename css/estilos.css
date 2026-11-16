@@ -193,6 +193,8 @@ address{
     padding: var(--espacio-3);
     font-size: 1.2rem;
     margin-bottom: 0;
+    text-align: left;
+    padding: 0px;
 }
 
 address a{
@@ -520,11 +522,8 @@ figure p {
     border-radius: 1rem;
 }
 
-
-
-
 /*
-  Lugares de interes para Index
+  Lugares de interes para index.html y lugares.html
 */
   
 .layout {
@@ -573,10 +572,8 @@ figure p {
 
     margin: 0 auto;
     align-self: start;
-
-    
-
 }
+
 .imagen .contenedor-imagen {
     position: relative;
     display: block;
@@ -608,6 +605,26 @@ figure p {
     padding: 0;
 }
 
+.btn-ocultar {
+    display: block;
+    width: 300px;
+    background-color: var(--color-destacado);
+    color: var(--color-blanco);
+    border: none;
+    padding: var(--espacio-);
+    font-size: var(--FontSH3);
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: var(--espacio-3);
+
+}
+
+.info-extra{
+    display: none;
+}
+
 .detalles {
     width: 100%;
     box-sizing: border-box;
@@ -616,6 +633,11 @@ figure p {
     margin: 0;
 
     border-radius: 5px;
+}
+
+.detalles p{
+    text-align: left;
+    padding: 0px;
 }
 
 .detalles h4 {
@@ -631,7 +653,7 @@ figure p {
 .contactos {
     grid-column: 1 / -1;
 
-    padding: 25px;
+    padding: 0px;
     text-align: left;
 }
 
@@ -689,8 +711,6 @@ button[type="submit"]:hover {
 /*
 Flexbox
 */
-
-
 
 /* posicionamiento */
 .contenedor-imagen {

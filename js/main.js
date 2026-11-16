@@ -26,24 +26,40 @@ boton.addEventListener("click", () => { // Cuando hagan click en el valor que ti
   actualizarBoton(); // actualiza el boton.
 });
 
+// Confirmacion de llenado de formulario en contacto.html
 
+const formulario = document.getElementById("formulariocontacto");
 
+if (formulario) {
+    formulario.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const nombre = document.getElementById("nombre").value.trim();
+        const email = document.getElementById("email").value.trim();
+
+        if (nombre === "" || email === "") {
+            alert("Por favor, complete todos los campos obligatorios incluidos en el formulario");
+        } else {
+            alert("Formulario exitosamente enviado");
+        }
+    });
+}
 
 // Confirmacion de llenado de formulario en contacto.html
 
-    const formulario = document.getElementById("formulariocontacto");
-    formulario.addEventListener("submit", ()=>{
-    const nombre = document.getElementById("nombre").value.trim();
-    const email = document.getElementById("email").value.trim();
+// Mostrar o Ocultar información en lugares.html
+const botones = document.querySelectorAll(".btn-ocultar");
 
-        if ((nombre === ""|| email === ""))
-        {
-            alert("Por favor, complete todos los campos obligatorios incluidos en el formulario");  
-        }
-        else
-        {
-            alert("Formulario exitosamente enviado")
-        }
-    })
+botones.forEach((boton) => {
+    boton.addEventListener("click", () => {
+        const infoExtra = boton.nextElementSibling;
 
-// Confirmacion de llenado de formulario en contacto.html
+        if (infoExtra.style.display === "block") {
+            infoExtra.style.display = "none";
+            boton.textContent = "Ver más";
+        } else {
+            infoExtra.style.display = "block";
+            boton.textContent = "Ocultar información";
+        }
+    });
+});
