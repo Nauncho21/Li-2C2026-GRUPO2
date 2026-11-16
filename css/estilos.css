@@ -190,7 +190,6 @@ footer > a{
 }
 
 address{
-    padding: var(--espacio-3);
     font-size: 1.2rem;
     margin-bottom: 0;
     text-align: left;
@@ -611,7 +610,6 @@ figure p {
     background-color: var(--color-destacado);
     color: var(--color-blanco);
     border: none;
-    padding: var(--espacio-);
     font-size: var(--FontSH3);
     font-weight: bold;
     border-radius: 10px;
@@ -716,7 +714,6 @@ Flexbox
 .contenedor-imagen {
     display: flex;
     position: relative;
-    width: fit-content;
     margin: 0 auto;
     width: 100%;
 }
